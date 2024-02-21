@@ -1,29 +1,24 @@
-﻿namespace Task4;
-
 public class Car
 {
-    public string Marke;
+    public string Make;
     public string Model;
-    public int Year ;
+    public int Year;
     public double Mileage;
-    public double Fuel ;
+    public double Fuel;
 
 
-    public Car(string make, string model,int year)
+public Car(string mark,string model,int year)
+{
+    Make = mark;
+    Model = model;
+    Year = year;
+}
+    public void Drive (double miles)
     {
+        Mileage = miles;
     }
-
-    public void Drive(double miles)
+    public void AddFuel(double gallons)
     {
-        if (Fuel < miles)
-        {
-            System.Console.WriteLine("Vam nuzhno zapravitsa dlya ezdi na machine ");
-        }
+        Fuel=gallons;
     }
-
-    public void AddFuel(double gallon)
-    {
-        
-    }
-    
 }
